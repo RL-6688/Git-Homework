@@ -1,28 +1,78 @@
-<h1>CSS教學</h1>
-<p>在這堂課上面，你了解如何使用CSS設定用在HTML標籤上，以及設定<a href="#">連結顏色</a>
-</p>
-<h2>這章節你認識的CSS設定文字語法</h2>
-<ol>
-  <li>文字顏色:color</li>
-  <li>文字大小:font-size</li>
-  <li>文字行距:line-height</li>
-  <li>文字字型:font-family</li>
-  <li>其他...</li>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 教學</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      line-height: 1.8;
+      margin: 40px;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: #0066cc;
+    }
+
+    a {
+      color: #cc3300;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ol, ul {
+      margin-left: 30px;
+    }
+
+    img {
+      display: block;
+      margin-top: 20px;
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+    }
+
+    .text-decoration {
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS 教學</h1>
+  <p>
+    在這堂課上面，你了解如何使用 CSS 設定用在 HTML 標籤上，以及設定
+    <a href="#">連結顏色</a>。
+  </p>
+
+  <h2>這章節你認識的 CSS 設定文字語法</h2>
+  <ol>
+    <li>文字顏色：<code>color</code></li>
+    <li>文字大小：<code>font-size</code></li>
+    <li>文字行距：<code>line-height</code></li>
+    <li>文字字型：<code>font-family</code></li>
+    <li>其他...</li>
   </ol>
 
-<h2>下列的emmet語法 哪一項是錯的?</h2>
-<ul>
-  <li>!=HTML環境</li>
-  <li>link:css=匯入CSS</li>
-  <li>P*4=顯示4個p段</li>
-  <li>h1=展開h1的開頭與結尾html標籤</li>
-  <li class="text-decoration">lorem=自動幫我們寫完網頁</li>
+  <h2>下列的 Emmet 語法哪一項是錯的？</h2>
+  <ul>
+    <li><code>!=</code> → HTML 環境</li>
+    <li><code>link:css</code> → 匯入 CSS</li>
+    <li><code>p*4</code> → 顯示 4 個 &lt;p&gt; 段落</li>
+    <li><code>h1</code> → 展開 &lt;h1&gt; 的開頭與結尾標籤</li>
+    <li class="text-decoration"><code>lorem</code> → 自動幫我們寫完網頁</li>
   </ul>
 
-<h2>在圖片上加上LOGO的線條</h2>
-<img src="https://drive.google.com/thumbnail?id=1acLRsC01DMyjbwP-dkKP6RmgXoNZ1h3o" alt="Logo">
-
-
-
-
-
+  <h2>在圖片上加上 LOGO 的線條</h2>
+  <img
+    src="https://drive.google.com/thumbnail?id=1acLRsC01DMyjbwP-dkKP6RmgXoNZ1h3o"
+    alt="Logo"
+  >
+</body>
+</html>
